@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Sketch Result | Vineet</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <div class="container glass">
+    <h2>🖼️ Your Sketch Result</h2>
+    <div class="images">
+      <div>
+        <h3>Original</h3>
+        <img src="{{ url_for('static', filename='uploads/' + original) }}" width="300">
+      </div>
+      <div>
+        <h3>Sketch</h3>
+        <img src="{{ url_for('static', filename='uploads/' + result) }}" width="300">
+      </div>
+    </div>
+
+    <a href="/">← Create Another</a>
+  </div>
+
+  <footer>Made with ❤️ by <strong>Vineet</strong></footer>
+</body>
+</html>
